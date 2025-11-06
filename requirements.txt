@@ -1,0 +1,28 @@
+# Core dependencies
+playwright>=1.40.0
+selenium>=4.15.0
+PyQt6>=6.6.0
+PyQt6-WebEngine>=6.6.0
+
+# Database
+SQLAlchemy>=2.0.23
+
+# Configuration
+PyYAML>=6.0.1
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Testing
+pytest>=7.4.3
+pytest-cov>=4.1.0
+
+# Packaging
+PyInstaller>=6.3.0
+cx-Freeze>=6.15.10
+
+# Development
+black>=23.12.1
+flake8>=6.1.0
+mypy>=1.7.1
