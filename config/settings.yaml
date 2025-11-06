@@ -1,0 +1,43 @@
+# Configuración del Monitor de Cuotas de Caballos
+
+# Intervalo de actualización en segundos (30, 60, o 300)
+interval: 60
+
+# URL base de Sportsbet
+base_url: "https://www.sportsbet.com.au"
+
+# Mercados a monitorear
+markets:
+  - id: 'race_1'
+    name: 'Carrera Principal'
+    url: '/racing/horse-racing'
+    enabled: true
+  
+  - id: 'race_2'
+    name: 'Carrera Secundaria'
+    url: '/racing/horse-racing'
+    enabled: false
+
+# Configuración de base de datos
+database:
+  path: 'data/cuotas.db'
+  echo: false  # Log SQL queries
+
+# Configuración del scraper
+scraper:
+  headless: true
+  timeout: 30000  # milliseconds
+  user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+
+# Configuración de logging
+logging:
+  level: 'INFO'  # DEBUG, INFO, WARNING, ERROR
+  file: 'logs/monitor.log'
+  console: true
+
+# Configuración de la GUI
+gui:
+  window_title: 'Monitor de Cuotas - Carreras de Caballos'
+  width: 1200
+  height: 800
+  theme: 'dark'  # light, dark

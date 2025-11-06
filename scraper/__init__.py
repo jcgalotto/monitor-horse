@@ -1,0 +1,1 @@
+"""\nMódulo de scraper para obtener cuotas de carreras de caballos de Sportsbet.\n\nEste módulo contiene las clases y funciones necesarias para extraer\ninformación de cuotas de las carreras de caballos utilizando Playwright.\n"""\n\nfrom .sportsbet_scraper import SportsbetScraper\n\n__all__ = ['SportsbetScraper']\n__version__ = '0.1.0'
